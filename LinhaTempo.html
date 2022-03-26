@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+         padding: 0;
+         margin: 0;
+     }
+     .ano {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(219, 174, 75);  
+        width: 60px;
+        height: 60px;  
+        border: 1px solid coral ;
+        border-radius: 50%;        
+        
+     z-index: 1;
+        padding: 1px;
+     }
+
+     .empresa {
+        width: 150px;
+        height: 80px;  
+        border: 1px solid coral ;
+        text-align: center;
+        background-color: white;    
+        padding: 1px;
+     }
+    
+     p{
+         font-size: 90%;
+     }
+     #linha{
+       display: flex;
+       background-color: rgb(245, 245, 202);
+       height: 300PX;
+       justify-content: space-around;
+       align-items: center;
+       border: 1px solid salmon;
+       align-content: center;
+     }
+
+     
+     #linha2{
+       display: flex;
+       height: 300PX;
+       justify-content: space-around;
+       align-items: top;
+     /*  border: 1px solid salmon; */
+       position: relative;
+       top:-308px;
+       padding-top: 5px;
+     }
+
+     #central{
+        background-color: rgb(219, 174, 75);  
+        width: 100%;
+        height: 5px;
+        border: 1px solid salmon;
+        position: relative;
+        top: -153px;
+       }
+</style>
+<body>
+    <audio src="09 Wind of Change.mp3" autoplay  loop>
+
+    </audio>
+    <div id="linhatempo">
+        <div id="linha">
+            <div class="ano"><p>2000-2022 </p></div>
+            <div class="ano"><p>2000-2001</p></div>
+            <div class="ano"><p>1998</p></div>
+            <div class="ano"><p>1997-1998</p></div>
+            <div class="ano"><p>1994-1995</p></div>
+            
+    
+        </div>
+        <div id="central"></div>
+
+        <div id="linha2">
+            <div class="empresa"><p>Senai<br/>full stack developer C#.Net , Vb.Net<br>
+                (core, rest, mvc)</p></div>
+            <div class="empresa"><p>CPM/Eletropaulo <br>C++ programmer </p></div>
+            <div class="empresa"><p>Logit<br/> 
+                Programming Intern in Delphi, C++, C++Builder </p></div>
+            
+            <div class="empresa"><p>Fase Informatica/Bank Pontual<br/>Delphi programmer with Oracle</p></div>
+            <div class="empresa"><p>Fapesp<br/>Programming Intern in Pascal, C and Novell network management </p></div>
+        </div>
+        <progress id="file" value="32" max="100"> 32% </progress>
+        <progress id="file" value="80" max="100"> 80% </progress>
+        <progress id="file" value="80" max="100"> 80% </progress>
+        <progress id="file" value="80" max="100"> 80% </progress>
+    </div>
+    
+   
+ 
+</body>
+</html>
