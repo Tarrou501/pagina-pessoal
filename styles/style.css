@@ -1,106 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap');
 
- * {
+* {
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif; 
-/*    font-family: 'Ubuntu Mono', monospace; */
- }
+    font-family: 'Ubuntu', sans-serif;
+    /*    font-family: 'Ubuntu Mono', monospace; */
+}
 
-header{   
-    background-color: black; 
-    width: 100%;   
-    height: 800px;
-    display: flex;
-    flex-direction: column;  
-
-    
- }
- 
- header nav{    
-    background-image: url('../images/fundo.jpg');   
+header nav {
+    background-image: url('../images/fundo.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 0.7;
     height: 100%;
-    width   : 100%;
-}
-
-
-#menu ul{
-    position: fixed;
-    z-index: 1;
     width: 100%;
-    opacity: 80%;
-
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #152238;
-    padding: 2%;
 }
 
 
-#menu  a{
+
+#menu a {
     color: aliceblue;
 }
 
-#apresentacao{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10% 3% 3% 3%;
-    align-items:   baseline;
-
-}
 
 
-#saudacao {
-    color: white;
-    font-size:  2em;
-    opacity: 1; 
-}
 
-#saudacao h1{
-    color: #f5ed7e;
-    opacity: 1;
-}
 
-#saudacao button{
-    background-color: #4fdfdf;
-    font-size: large;
-    padding: 2%;
-}
-#imgFoto{
-    width: 30%;
-    border-radius: 50%;
-}
-
-main{
+main {
     width: 70%;
     margin: auto;
 }
 
-main h1,h3{
+main h1, h3 {
     color: #4a3692;
     margin-top: 2%;
-    
+
 }
 
 main hr {
     margin-top: 3%;
 }
 
-@keyframes  transicao {
-    0% {color:#4a3692 }
-    50% {color: white}
-   
-    100% {color: #4a3692}
- 
+@keyframes transicao {
+    0% {
+        color: #4a3692
+    }
+
+    50% {
+        color: white
+    }
+
+    100% {
+        color: #4a3692
+    }
+
 }
 
-.animacao{
+.animacao {
     animation-name: transicao;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -116,84 +75,284 @@ footer {
     margin-top: 3%;
 }
 
-footer ul{
+footer ul {
     display: flex;
-}   
+}
 
 
-footer ul li{
-  margin-right: 6px;
-}   
+footer ul li {
+    margin-right: 6px;
+}
 
-footer img{
+footer img {
     width: 1.8rem;
 }
 
-#aboutme{
+
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+
+th {
+    font-size: 130%;
+    font-weight: bold;
+    padding: 5px 0;
+    background-color: #3f3b80;
+    border: 1px solid #ccc;
+    color: white;
+    
+}
+
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-spacing: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+tr, tr {
+    border: thin solid #CCC;
+    border-bottom: none;
+    border-right: none;
+    padding: 5px;
+    font-size: medium;
+    color: rgb(136, 131, 131);
+}
+
+td {
+    text-align: center;
+}
+
+#menu ul {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #152238;
+    padding: 2%;
+}
+
+
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+#apresentacao {
+    display: flex;
+    align-items: baseline;
+}
+
+#imgFoto {
+    border-radius: 50%;
+}
+
+#saudacao {
+    color: white;
+
+    opacity: 1;
+}
+
+#saudacao h1 {
+    color: #f5ed7e;
+    opacity: 1;
+}
+
+#saudacao button {
+    background-color: #4fdfdf;
+    font-size: large;
+    padding: 10px;
+}
+
+
+#aboutme {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
 }
 
-#imgmMoto{
-    width: 100%;
-    border-radius: 10%;
-    margin: 4%;
-}    
+#projects, #pinturas {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+
+}
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-    width: 30%;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+}
 
-  #projects ,#pinturas{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    justify-content: space-between;
-  }
+@media only screen and (min-width: 400px) and (max-width: 719px) {
 
-  caption {
-    font-size:130%;
-    font-weight:bold;
-    padding:5px 0;
-    background-color:#ECECEC;
-    border:1px solid #ccc;
-    border-bottom:none;
+    header {
+        height: 900px;
     }
 
+    #menu ul {
+        flex-direction: column;
+    }
 
-  table {
-     width:100%;
-    margin:0 auto;
-    border-spacing:0;
-    border-left:1px solid #ccc;
-    border-right:1px solid #ccc;
-    border-bottom:1px solid #ccc;
+    #menu li {
+      font-size: 200%;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+        align-items: center;
+        padding: 30% 10px;
+    }
+
+    #imgFoto {
+        width: 70%;
+        margin-top: 15%;
+    }
+
+    #saudacao {
+        width: 90%;
+        font-size: large;
+    }
+
+    #aboutme {
+        flex-direction: column-reverse;
+    }
+
+    #divaboutme {
+        width: 100%;
+        margin: 5px;
+    }
+
+    
+    #divmoto {
+        width: 100%;
     }
     
-  tr, tr, th{
-      border:thin solid #CCC;
-      border-bottom:none;
-      border-right:none;
-      padding:5px;
-  }
+    #imgmMoto {
+        border-radius: 10%;
+        margin: 20px 5px;
+        width: 90%;
+    }
 
-  td{
-      text-align: center;
-  }
+    #projects, #pinturas {
+        align-items: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+
+    header {
+        height: 800px;
+    }
+
+    #menu ul {
+        flex-direction: row;
+    }
+
+    #apresentacao {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding: 10% 3% 3% 3%;
+    }
+
+
+ 
+
+    #aboutme {
+        flex-direction: row;
+    }
+
+    #divaboutme {
+        width: 70%;
+        margin: 5px;
+    }
+    
+    #divmoto {
+        width: 30%;
+    }
+    
+    #imgmMoto {
+        border-radius: 10%;
+        margin: 5px;
+        width: 90%;
+    }
+
+    #divmoto h3{
+        display: none;
+    }
+
+    #projects, #pinturas {
+        align-items: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 30%;
+    }
+    
+}
+
+@media only screen and (min-width: 720px) and (max-width: 2000px) {
+
+    #apresentacao {
+        justify-content: space-evenly;
+        padding: 10% 3% 3% 3%;
+    }
+
+    #imgFoto {
+        width: 30%;
+    }
+    #saudacao {
+        width: 40%;
+        font-size: 20px;
+    }
+
+}
+@media only screen and (min-width: 2001px)  {
+
+    #apresentacao {
+        padding: 7% 3% 3% 3%;
+    }
+
+    #imgFoto {
+        width: 20%;
+    }
+    #saudacao {
+        width: 40%;
+        font-size: 30px;
+    }
+
+}
