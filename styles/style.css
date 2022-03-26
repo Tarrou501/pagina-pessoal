@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap'); 
+
+ * {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif; 
+/*    font-family: 'Ubuntu Mono', monospace; */
+ }
+
+header{   
+    background-color: black; 
+    width: 100%;   
+    height: 800px;
+    display: flex;
+    flex-direction: column;  
+
+    
+ }
+ 
+ header nav{    
+    background-image: url('../images/fundo.jpg');   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    height: 100%;
+    width   : 100%;
+}
+
+
+#menu ul{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #152238;
+    padding: 2%;
+}
+
+
+#menu  a{
+    color: aliceblue;
+}
+
+#apresentacao{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10% 3% 3% 3%;
+    align-items:   baseline;
+
+}
+
+
+#saudacao {
+    color: white;
+    font-size:  2em;
+    opacity: 1; 
+}
+
+#saudacao h1{
+    color: #f5ed7e;
+    opacity: 1;
+}
+
+#saudacao button{
+    background-color: #4fdfdf;
+    font-size: large;
+    padding: 2%;
+}
+#imgFoto{
+    width: 30%;
+    border-radius: 50%;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
+
+main h1,h3{
+    color: #4a3692;
+    margin-top: 2%;
+    
+}
+
+main hr {
+    margin-top: 3%;
+}
+
+@keyframes  transicao {
+    0% {color:#4a3692 }
+    50% {color: white}
+   
+    100% {color: #4a3692}
+ 
+}
+
+.animacao{
+    animation-name: transicao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #152238;
+    color: white;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+footer ul{
+    display: flex;
+}   
+
+
+footer ul li{
+  margin-right: 6px;
+}   
+
+footer img{
+    width: 1.8rem;
+}
+
+#aboutme{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#imgmMoto{
+    width: 100%;
+    border-radius: 10%;
+    margin: 4%;
+}    
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 30%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  #projects ,#pinturas{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+  }
+
+  caption {
+    font-size:130%;
+    font-weight:bold;
+    padding:5px 0;
+    background-color:#ECECEC;
+    border:1px solid #ccc;
+    border-bottom:none;
+    }
+
+
+  table {
+     width:100%;
+    margin:0 auto;
+    border-spacing:0;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    }
+    
+  tr, tr, th{
+      border:thin solid #CCC;
+      border-bottom:none;
+      border-right:none;
+      padding:5px;
+  }
+
+  td{
+      text-align: center;
+  }
