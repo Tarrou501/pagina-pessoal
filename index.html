@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
     <link rel="stylesheet" href="styles/style.css">
     <title>Leonardo Tarrou</title>
 
@@ -13,14 +15,25 @@
 <body>
 
     <header>
-        <nav id="menu">
-            <ul>
-                <li><a href="#aboutme"> About me</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#academicback"> Academic Background</a></li>
-                <li><a href="#professionalback"> Professional Background</a></li>
-            </ul>
+        <div id="menu">
+            <div id="submenu">
+                <label for="exibirmenu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" id="exibirmenu">
+                <nav>
+                    <ul>
+                        <li><a href="#aboutme"> About me</a></li>
+                        <li><a href="#projects"> Projects</a></li>
+                        <li><a href="#academicback"> Academic Background</a></li>
+                        <li><a href="#professionalback"> Professional Background</a></li>
+                    </ul>
+                    <label id="lbfechar" for="exibirmenu">
+                        <i id="fechar" class="fas fa-window-close"></i>
+                     </label>
+                </nav>
 
+            </div>
             <div id="apresentacao">
                 <img id="imgFoto" src="images/tarrou02.jpg" alt="I am">
 
@@ -37,18 +50,18 @@
                     <button>Let's have a coffee</button>
                 </div>
             </div>
-        </nav>
+        </div>
 
     </header>
     <main>
 
         <h1>&#64;About&#95;me<span class="animacao">&#9608;</span></h1>
         <div id="aboutme">
-       
-            <div id="divmoto" >     
+
+            <div id="divmoto">
                 <h3>This is I</h3>
                 <img id="imgmMoto" src="images/tarrou01.jpeg" alt="I am" />
-           
+
             </div>
             <div id="divaboutme">
 
