@@ -399,7 +399,7 @@ td {
 
     #apresentacao {
         justify-content: space-evenly;
-        padding: 10% 3% 3% 3%;
+        padding: 9% 3% 3% 3%;
     }
 
     #imgFoto {
@@ -413,7 +413,7 @@ td {
 
 }
 
-@media only screen and (min-width: 1801px) {
+@media only screen and (min-width: 1801px) and (max-width: 3000px) {
 
     
     #apresentacao{
