@@ -67,13 +67,15 @@ header input {
 }
 
 #submenu ul {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 #submenu a {
-    color: aliceblue;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
 }
 
 #fechar {
@@ -410,7 +412,6 @@ td {
         width: 40%;
         font-size: 20px;
     }
-
 }
 
 @media only screen and (min-width: 1801px) and (max-width: 3000px) {
