@@ -8,6 +8,9 @@
     font-family: 'Ubuntu', sans-serif;
     /*    font-family: 'Ubuntu Mono', monospace; */
 }
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,28,59,1) 35%, rgba(0,212,255,1) 100%);
+}
 
 header {
     background-color: black;
@@ -31,6 +34,7 @@ header>div {
 header input {
     display: none;
 }
+
 
 #submenu {
     position: fixed;
@@ -139,6 +143,10 @@ header input {
     transition: 0.3s;
 }
 
+.card h4{
+    color: aliceblue;
+}
+
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -158,9 +166,9 @@ main {
 }
 
 main h1, h3 {
-    color: #4a3692;
+    color: white;
     margin-top: 2%;
-
+ 
 }
 
 main hr {
@@ -250,6 +258,9 @@ td {
     height: 300px;
 }
 
+#divaboutme p {
+   color :aliceblue;
+}
 @media only screen and (min-width: 200px) and (max-width: 719px) {
 
     header {
